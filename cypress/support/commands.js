@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("LoginUser", (user) => {
+    cy.request({
+        url: "https://practice.expandtesting.com/notes/api/users/login",
+        method: "POST",
+        body: user
+      })
+})
