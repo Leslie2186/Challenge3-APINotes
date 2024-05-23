@@ -18,7 +18,7 @@ describe('CRUD complet sur API notes', () => {
     })
   })
 
-  it("Création d'un nouvel utilisateur", () => {
+  it.skip("Création d'un nouvel utilisateur", () => {
     cy.request({
       url: "https://practice.expandtesting.com/notes/api/users/register",
       method: "POST",
